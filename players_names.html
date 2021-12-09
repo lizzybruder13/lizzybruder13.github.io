@@ -6,15 +6,14 @@
   <body>
     <h1>Golf Game</h1>
     <script>
-      var num_of_players = localstorage.getItem("num_of_players");
       var players = document.getElementById("players_list");
       var inhtml = "";
-      for (let i=0; i < num_of_players; i++) {
+      for (let i=0; i < num; i++) {
         inhtml += "<div>player " + string(i) + " </div><br>";
       }
       players.innerHTML = inhtml
     </script>
-    <div id="players_list"></div>
+    <div id="players_list">new</div>
     <a href="https://lizzybruder13.github.io/num_of_players.html"><button class="back_button">Back</button></a>
     <button class="next_button">Next</button>
   </body>
