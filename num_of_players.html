@@ -5,18 +5,17 @@
   </head>
   <body>
     <h1>Golf Game</h1>
-    <label for="num_of_players">How many players are playing?</label>
-    <select name="num_of_players" id="num_of_players">
-      <option value=1>1</option>
-      <option value=2>2</option>
-      <option value=3>3</option>
-      <option value=4>4</option>
-    </select>
-    <script src="helpers.js">
-      num = document.getElementById("num_of_players").value;
-      console.log(num)
-    </script>
+    <form action="https://lizzybruder13.github.io/players_names.html" id="num_players">
+      <label for="num_of_players">How many players are playing?</label>
+      <select name="num_of_players" id="num_of_players" form="num_players">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+      </select>
+      <input type="submit" value="Next">
+    </form>
     <a href="https://lizzybruder13.github.io"><button class="back_button">Back To Home</button></a>
-    <a href="https://lizzybruder13.github.io/players_names.html"><button class="next_button">Next</button></a>
+    <!-- <a href="https://lizzybruder13.github.io/players_names.html"><button class="next_button">Next</button></a> -->
   </body>
 </html>
